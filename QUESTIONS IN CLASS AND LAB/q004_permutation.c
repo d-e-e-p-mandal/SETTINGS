@@ -5,7 +5,7 @@
 int fact(int a);    //function declare     
 void swap(char *x, char *y);
 int main(){         //driver code
-    char str[3];
+    char str[5];
     printf("Enter character or number : ");
     scanf("%s",str);
     int i,j,length,factorial;
