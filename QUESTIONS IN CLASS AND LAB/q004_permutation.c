@@ -6,7 +6,7 @@ int fact(int a);    //function declare
 void swap(char *x, char *y);
 int main(){         //driver code
     char str[3];
-    printf("Enter character or name : ");
+    printf("Enter character or number : ");
     scanf("%s",str);
     int i,j,length,factorial;
     length = strlen(str);
@@ -33,7 +33,7 @@ int fact(int n){
 
 /*
 OUTPUT
-Enter character or name : ABC
+Enter character or number : ABC
 ABC
 BAC
 BCA
