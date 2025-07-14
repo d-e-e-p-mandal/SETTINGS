@@ -1,0 +1,75 @@
+✅ What You Have:
+	•	✅ You downloaded Tomcat (e.g., apache-tomcat-9.0.xx.zip)
+	•	✅ You extracted it to a folder like:
+
+Command :
+
+/Users/yourname/Downloads/apache-tomcat-9.0.xx/
+
+
+
+✅ What You Need to Do Next
+
+⸻
+
+🔹 1. Start Tomcat Server
+
+Open Terminal and run:
+
+Command :
+
+cd /Users/yourname/Downloads/apache-tomcat-9.0.xx/bin
+
+chmod +x *.sh  # Give execute permission (only once)
+./startup.sh   # Start the server
+
+./shutdown.sh   #to stop server 
+
+If it works, open browser and go to:
+http://localhost:8080
+
+
+
+Where to Deploy JSP/Servlet App
+
+You’ll put your JSP or WAR files inside:
+/Users/yourname/Downloads/apache-tomcat-9.0.xx/webapps/
+
+
+
+🔹 3. Test With a Simple JSP File
+
+You can test JSP even without servlets yet.
+
+👉 Create a folder:
+
+mkdir /Users/yourname/Downloads/apache-tomcat-9.0.xx/webapps/TestApp
+
+👉 Add a file: index.jsp
+<%@ page contentType="text/html;charset=UTF-8" %>
+<html>
+  <body>
+    <h2>Hello from plain JSP in Tomcat!</h2>
+  </body>
+</html>
+
+
+👉 Save it to:
+/Users/yourname/Downloads/apache-tomcat-9.0.xx/webapps/TestApp/index.jsp
+
+
+👉 Access in browser:
+http://localhost:8080/TestApp/index.jsp
+
+
+
+
+
+2. For create server
+same as then run
+
+mkdir -p build/WEB-INF/classes
+javac -d build/WEB-INF/classes -cp "<TOMCAT_HOME>/lib/servlet-api.jar" src/com/example/*.java
+cp -r WebContent/* build/
+cd build
+jar -cvf MyJavaWebApp.war *
