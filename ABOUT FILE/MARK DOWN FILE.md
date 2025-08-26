@@ -1,7 +1,10 @@
-# RED
-*Violet*
-**Yellow**
-`Green`
+# RED : Heading 1
+## RED : Heading 2
+### RED : Heading 3
+*Violet* : Itlic
+**Yellow** : BOLD
+`Green` : Heighlight
+ --- : horiazontal line
 
 
 // Preview : 
