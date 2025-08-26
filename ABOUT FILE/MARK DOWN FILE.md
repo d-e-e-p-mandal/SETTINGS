@@ -3,8 +3,10 @@
 ### RED : Heading 3
 *Violet* : Itlic
 **Yellow** : BOLD
-`Green` : Heighlight
- --- : horiazontal line
+`Green` : 
+--- (if it next line : Same as #)
+
+ --- : horiazontal line (gap one line)
 
 
 // Preview : 

@@ -26,3 +26,14 @@
 6. Create : `bits` folder and `stdc++.h `
             or
     Copy Paste bits/stdc++.h folder
+
+
+---
+
+Run :
+----
+clang++ -I ~/include myfile.cpp -o myfile
+
+Or in Xcode:
+	•	Go to Project Settings → Build Settings → Header Search Paths
+	•	Add ~/include
