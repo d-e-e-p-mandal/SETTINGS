@@ -45,13 +45,13 @@
 
 ## Block :
 Example :
-``` c
+```c
 
 ```
 Example :
 ```cpp
 
 ```
-
+Others : js, c, cpp, bash, paython, java, json, etc
 
 
