@@ -26,9 +26,9 @@ root
 
 ```json
  "scripts": {
-    "dev": "node backend/index.js",
+    "dev": "nodemon backend/index.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "node backend/index.js"
+    "start": "nodemon backend/index.js"
   },
 
 ```
