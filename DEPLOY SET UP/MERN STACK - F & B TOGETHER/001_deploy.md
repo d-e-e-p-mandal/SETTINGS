@@ -3,15 +3,15 @@ Step 2 : backend file ->.env, gitignore, package.json, package.lock.json -> root
 
 
 ```js
-improt path from "path";
+import path from "path";
 
 const _dirname = path.resolve();
 
-app.use(express.static(path.join(_drname,"/ffontend/dist"))); // frontend
+app.use(express.static(path.join(_dirname,"/fontend/dist"))); // frontend
 
 app.get('*', (req, res)=>{
     res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"));
-})'
+});
 ```
 ```js
 import path from "path";
