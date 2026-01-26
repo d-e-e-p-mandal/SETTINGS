@@ -22,22 +22,6 @@ lms
 
 
 ⸻
-
-✅ How Node Resolves Modules (Important)
-
-When running:
-
-node server/index.js
-
-Node looks for:
-	1.	server/node_modules ✅
-	2.	../node_modules (fallback)
-	3.	global modules
-
-👉 Best practice: keep dependencies local to the project using them.
-
-⸻
-
 ✅ Scripts Setup (ROOT)
 
 Root package.json:
@@ -46,7 +30,9 @@ Root package.json:
   "scripts": {
     "dev:server": "nodemon server/index.js",
     "dev:client": "npm run dev --prefix client",
-    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "npm install --prefix client && npm run build --prefix client",
+    "start": "node server/index.js"
   }
 }
 ```
@@ -58,6 +44,4 @@ Root package.json:
 server/node_modules
 client/node_modules
 .env
-
-
 ⸻
