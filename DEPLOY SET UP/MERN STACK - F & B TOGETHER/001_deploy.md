@@ -63,10 +63,19 @@ export default app;
 
 
 ```json
-"scripts": {
-    "dev": "nodemon backend/index.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "nodemon backend/index.js",
+{
+  "scripts": {
+    /* ================= DEV ================= */
+    "dev:server": "nodemon server/index.js",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+
+    /* ================= BUILD ================= */
+    "build": "npm install --prefix client && npm run build --prefix client",
+
+    /* ================= START ================= */
+    "start": "node server/index.js"
+  }
 }
 ```
 

@@ -47,3 +47,7 @@ Ready! Your webhook signing secret is whsec_1234567890abcdef
 STRIPE_SECRET_KEY=sk_test_xxxxxxxxx
 STRIPE_WEBHOOK_SECRET=whsec_1234567890abcdef
 ```
+
+## Online Test : 
+1. Test mode on 
+2. env variable key same as before
