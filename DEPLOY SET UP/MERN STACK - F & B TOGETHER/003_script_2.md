@@ -3,8 +3,8 @@
 ⸻
 
 ✅ Correct & Clean Structure (Recommended)
-
-lms
+```
+root
 ├── client
 │   ├── package.json
 │   └── node_modules
@@ -19,7 +19,7 @@ lms
 ├── .env
 ├── .gitignore
 └── README.md
-
+```
 
 ⸻
 ✅ Scripts Setup (ROOT)
