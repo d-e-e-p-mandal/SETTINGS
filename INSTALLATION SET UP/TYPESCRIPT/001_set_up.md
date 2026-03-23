@@ -5,7 +5,7 @@ npm install typescript
 
 Global Install : 
 ```bash
-npm install typescript
+npm install -g typescript
 ```
 
 Here are the most important tsc (TypeScript Compiler) commands you should know 👇
@@ -34,7 +34,15 @@ tsc file1.ts file2.ts
 tsc --init
 ```
 👉 Creates tsconfig.json (project settings file)
-
+custom exclude 
+```json
+{
+  "compilerOptions": {
+    "outDir": "./dist"
+  },
+  "exclude": ["node_modules", "dist"]
+}
+```
 ⸻
 
 🔹 Watch Mode (Auto Compile)
