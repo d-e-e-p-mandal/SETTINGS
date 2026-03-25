@@ -40,7 +40,8 @@ custom exclude
   "compilerOptions": {
     "outDir": "./dist"
   },
-  "exclude": ["node_modules", "dist"]
+  "include":["class.ts"], // "*./dev.ts" //"**/*.dev.ts"
+  "exclude": ["node_modules", "dist"] 
 }
 ```
 ⸻
